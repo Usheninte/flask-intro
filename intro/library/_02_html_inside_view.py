@@ -18,11 +18,7 @@ def hello_world():
     html = """
         <html>
             <h1>Welcome to our Library!</h1>
-            <ul>
-                <li>Alan Poe</li>
-                <li>Jorge L. Borges</li>
-                <li>Mark Twain</li>
-            </ul>
+            {authors_ul}
         </html>
     """
     authors = ["Alan Poe", "Jorge L. Borges", "Mark Twain"]
@@ -35,4 +31,4 @@ def hello_world():
 
     print(authors_list)
 
-    return html
+    return html.format(authors_ =authors_list)
