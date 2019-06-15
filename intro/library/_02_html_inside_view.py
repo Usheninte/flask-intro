@@ -30,7 +30,7 @@ def hello_world():
     # python generated authors list
     authors_list = "<ul>"
     authors_list += "\n".join([
-        "<li>{author}</li>",formaat(author = author) for author in authors])
+        "<li>{author}</li>".format(author=author) for author in authors])
     authors_list += "</ul>"
 
     print(authors_list)
