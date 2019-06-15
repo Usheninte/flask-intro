@@ -21,7 +21,7 @@ def hello_world():
             {authors_ul}
         </html>
     """
-    authors = ["Alan Poe", "Jorge L. Borges", "Mark Twain"]
+    authors = ["Alan Poe", "Jorge L. Borges", "Mark Twain", "Jane Austen"]
 
     # python generated authors list
     authors_list = "<ul>"
@@ -31,4 +31,4 @@ def hello_world():
 
     print(authors_list)
 
-    return html.format(authors_ =authors_list)
+    return html.format(authors_ul=authors_list)
