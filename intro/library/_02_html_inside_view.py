@@ -26,5 +26,13 @@ def hello_world():
         </html>
     """
     authors = ["Alan Poe", "Jorge L. Borges", "Mark Twain"]
-    # build an <ul> with authors
+
+    # python generated authors list
+    authors_list = "<ul>"
+    authors_list += "\n".join([
+        "<li>{author}</li>",formaat(author = author) for author in authors])
+    authors_list += "</ul>"
+
+    print(authors_list)
+
     return html
